@@ -17,11 +17,11 @@ public:
     Tic();
     virtual ~Tic();
 protected:
-    virtual void generateMessage();
-    virtual void sendMessage(cMessage *msg);
-    virtual void receivedMessage(cMessage *msg);
-    virtual void initialize() override;
-    virtual void handleMessage(cMessage *msg) override;
+     void generateMessage();
+     void sendMessage(cMessage *msg);
+     void receivedMessage(cMessage *msg);
+     void initialize() override;
+     void handleMessage(cMessage *msg) override;
 };
 
 
