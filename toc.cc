@@ -16,10 +16,10 @@ private:
     int multiple_lost_pkt_flag = 1; //Variable to check if there are multiple packet loss then send the seq_no one less than the initial packet loss
     int repeat_seq_flag = 0;
 protected:
-    virtual void handleMessage(cMessage *msg) override;
-    virtual void generateMessage();
-    virtual void receivedMessage(cMessage *msg);
-    virtual void sendMessage(cMessage *msg);
+    void handleMessage(cMessage *msg) override;
+    void generateMessage();
+    void receivedMessage(cMessage *msg);
+    void sendMessage(cMessage *msg);
 };
 
 Define_Module(Toc);
